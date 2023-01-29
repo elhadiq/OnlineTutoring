@@ -1,6 +1,6 @@
 package geometry;
 
-enum Direction{
+public enum Direction{
     TOP(true,false),
     BOTTOM(true,true),
     LEFT(false,false),

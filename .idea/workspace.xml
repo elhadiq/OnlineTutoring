@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8796d408-888d-440c-8099-ef7ac57a3f3f" name="Changes" comment="&quot;First realisation&quot;">
-      <change afterPath="$PROJECT_DIR$/src/exceptions/RectangleException.java" afterDir="false" />
+    <list default="true" id="8796d408-888d-440c-8099-ef7ac57a3f3f" name="Changes" comment="Todo CopyOf">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exceptions/RectangleException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exceptions/RectangleException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geometry/Coordinate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometry/Coordinate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geometry/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometry/Direction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/geometry/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometry/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/TheMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/TheMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +44,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/zelhadiq/Desktop",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -102,7 +106,7 @@
       <workItem from="1674878527825" duration="2344000" />
       <workItem from="1674917875816" duration="16497000" />
       <workItem from="1674959447165" duration="570000" />
-      <workItem from="1674960082618" duration="13295000" />
+      <workItem from="1674960082618" duration="17998000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;First realisation&quot;">
       <created>1674995864099</created>
@@ -111,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674995864099</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Todo CopyOf">
+      <created>1674999448881</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674999448881</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <option name="searchClosedTasks" value="true" />
     <servers />
   </component>
@@ -131,6 +142,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&quot;First realisation&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;First realisation&quot;" />
+    <MESSAGE value="Todo CopyOf" />
+    <option name="LAST_COMMIT_MESSAGE" value="Todo CopyOf" />
   </component>
 </project>

@@ -8,7 +8,6 @@ public class Coordinate <T extends Comparable <T> > {
         this.y = y;
     }
 
-
     public void setX(T x) {
         this.x = x;
     }
@@ -24,6 +23,9 @@ public class Coordinate <T extends Comparable <T> > {
     public void setY(T y) {
         this.y = y;
     }
+
+
+
 
     @Override
     public String toString() {
