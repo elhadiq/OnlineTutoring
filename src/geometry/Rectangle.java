@@ -1,16 +1,12 @@
 package geometry;
 
 import exceptions.RectangleException;
-import org.w3c.dom.css.Rect;
 
 import java.util.Collection;
-import java.util.Collections;
 import java.util.EnumMap;
-import java.util.List;
 
 public final class Rectangle <T extends Comparable>{
-
-    private final EnumMap<Direction, T> borders;
+    public final EnumMap<Direction, T> borders;
 
     public Rectangle(EnumMap<Direction, T> borders) {
         this.borders = borders;
@@ -35,12 +31,12 @@ public final class Rectangle <T extends Comparable>{
     public T right(){
         return getBorder(Direction.RIGHT);}
 
-    public  Rectangle<T> of (T top,T bottom,T left,T right) throws RectangleException {
-        //TODO make it static
-        if (bottom.compareTo(top)<0 ||left.compareTo(right)<0){
-            throw new RectangleException("You have a problem ");
-        }
 
+    public static  <T extends Comparable> Rectangle<T> of(T top, T bottom, T left, T right) throws RectangleException {
+        //TODO make it static
+        if (bottom.compareTo(top)<0 ||right.compareTo(left)<0){
+            throw new RectangleException("You have a problem bottom="+bottom+ " is greater than top ="+top+" or left="+left +"is greater than right="+right);
+        }
 
         EnumMap<Direction, T> borders=new EnumMap<>(Direction.class);
 
@@ -59,7 +55,7 @@ public final class Rectangle <T extends Comparable>{
                 '}';
     }
 
-    public Rectangle<T> copyOf(Rectangle<T> rect){
+    public static <T extends Comparable>  Rectangle<T> copyOf(Rectangle<T> rect){
         //TODO It should be static
         EnumMap<Direction, T> borders=new EnumMap<>(Direction.class);
 
@@ -70,6 +66,10 @@ public final class Rectangle <T extends Comparable>{
 
         return new Rectangle<T>(borders);
 
+    }
+
+    static public Rectangle<Comparable> function(){
+        return  null;
     }
 
 }
