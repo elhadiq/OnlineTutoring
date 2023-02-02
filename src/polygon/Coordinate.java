@@ -1,4 +1,4 @@
-package geometry;
+package polygon;
 public class Coordinate <T extends Comparable <T> > {
    private  T x;
    private T y;
@@ -23,9 +23,6 @@ public class Coordinate <T extends Comparable <T> > {
     public void setY(T y) {
         this.y = y;
     }
-
-
-
 
     @Override
     public String toString() {

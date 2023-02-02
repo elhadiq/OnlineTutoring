@@ -1,19 +1,18 @@
-package geometry;
+package polygon;
 
 import exceptions.RectangleException;
 
 import java.util.Collection;
 import java.util.EnumMap;
 
-public final class Rectangle <T extends Comparable>{
-    public final EnumMap<Direction, T> borders;
+public final class Rectangle <T extends Comparable >{
+    private final EnumMap<Direction, T> borders;
 
     public Rectangle(EnumMap<Direction, T> borders) {
         this.borders = borders;
     }
     T getBorder(Direction direction){
         return this.borders.get(direction);
-        //it returns the value asoociated with direction
     }
 
     public EnumMap<Direction, T> getBorders(Collection<Direction> directions){
@@ -32,7 +31,7 @@ public final class Rectangle <T extends Comparable>{
         return getBorder(Direction.RIGHT);}
 
 
-    public static  <T extends Comparable> Rectangle<T> of(T top, T bottom, T left, T right) throws RectangleException {
+    public static  <T extends Comparable<? super T> > Rectangle<T> of(T top, T bottom, T left, T right) throws RectangleException {
         //TODO make it static
         if (bottom.compareTo(top)<0 ||right.compareTo(left)<0){
             throw new RectangleException("You have a problem bottom="+bottom+ " is greater than top ="+top+" or left="+left +"is greater than right="+right);
@@ -56,7 +55,6 @@ public final class Rectangle <T extends Comparable>{
     }
 
     public static <T extends Comparable>  Rectangle<T> copyOf(Rectangle<T> rect){
-        //TODO It should be static
         EnumMap<Direction, T> borders=new EnumMap<>(Direction.class);
 
         borders.put(Direction.TOP,rect.getBorder(Direction.TOP));
@@ -64,12 +62,9 @@ public final class Rectangle <T extends Comparable>{
         borders.put(Direction.LEFT,rect.getBorder(Direction.LEFT));
         borders.put(Direction.RIGHT,rect.getBorder(Direction.RIGHT));
 
-        return new Rectangle<T>(borders);
+        return new Rectangle<>(borders);
 
     }
 
-    static public Rectangle<Comparable> function(){
-        return  null;
-    }
 
 }

@@ -1,6 +1,8 @@
-package geometry;
+package polygon;
 
-public enum Direction{
+import java.util.Set;
+
+enum Direction{
     TOP(true,false),
     BOTTOM(true,true),
     LEFT(false,false),
