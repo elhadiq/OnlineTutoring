@@ -1,6 +1,5 @@
 package polygon;
 
-import java.util.Set;
 
 enum Direction{
     TOP(true,false),
@@ -18,11 +17,11 @@ enum Direction{
     }
 
     public boolean isHorizontal() {
-        return horizontal;
+        return this.horizontal;
     }
 
     public boolean isIncrement() {
-        return increment;
+        return this.increment;
     }
 }
 

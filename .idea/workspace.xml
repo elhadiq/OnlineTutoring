@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8796d408-888d-440c-8099-ef7ac57a3f3f" name="Changes" comment="Fix Static methodes and Exceptions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometry/Coordinate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/polygon/Coordinate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometry/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/polygon/Direction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometry/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/polygon/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exceptions/RectangleException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exceptions/RectangleException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/polygon/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/polygon/Rectangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/TheMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/TheMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +116,9 @@
       <workItem from="1675025812876" duration="57000" />
       <workItem from="1675205105486" duration="852000" />
       <workItem from="1675205994118" duration="5566000" />
-      <workItem from="1675361165359" duration="4183000" />
+      <workItem from="1675361165359" duration="5535000" />
+      <workItem from="1675424667574" duration="1690000" />
+      <workItem from="1675445288607" duration="4868000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;First realisation&quot;">
       <created>1674995864099</created>
@@ -171,5 +171,15 @@
     <MESSAGE value="Todo CopyOf" />
     <MESSAGE value="Fix Static methodes and Exceptions" />
     <option name="LAST_COMMIT_MESSAGE" value="Fix Static methodes and Exceptions" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

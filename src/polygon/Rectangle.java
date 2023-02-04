@@ -8,7 +8,7 @@ import java.util.EnumMap;
 public final class Rectangle <T extends Comparable >{
     private final EnumMap<Direction, T> borders;
 
-    public Rectangle(EnumMap<Direction, T> borders) {
+    private Rectangle(EnumMap<Direction, T> borders) {
         this.borders = borders;
     }
     T getBorder(Direction direction){
@@ -31,10 +31,16 @@ public final class Rectangle <T extends Comparable >{
         return getBorder(Direction.RIGHT);}
 
 
-    public static  <T extends Comparable<? super T> > Rectangle<T> of(T top, T bottom, T left, T right) throws RectangleException {
+    public static  <T extends Comparable<? super T> > Rectangle<T> of(T top, T bottom, T left, T right) {
         //TODO make it static
+        RectangleException.verifyNonNull(top);
+        RectangleException.verifyNonNull(bottom);
+        RectangleException.verifyNonNull(left);
+        RectangleException.verifyNonNull(right);
+        RectangleException.verifyBounds(left,right);
+        RectangleException.verifyBounds(top,bottom);
         if (bottom.compareTo(top)<0 ||right.compareTo(left)<0){
-            throw new RectangleException("You have a problem bottom="+bottom+ " is greater than top ="+top+" or left="+left +"is greater than right="+right);
+            throw new IllegalArgumentException("You have a problem bottom="+bottom+ " is greater than top ="+top+" or left="+left +"is greater than right="+right);
         }
 
         EnumMap<Direction, T> borders=new EnumMap<>(Direction.class);
