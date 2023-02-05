@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8796d408-888d-440c-8099-ef7ac57a3f3f" name="Changes" comment="Fix Static methodes and Exceptions">
+      <change afterPath="$PROJECT_DIR$/src/polygon/AxisMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exceptions/RectangleException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exceptions/RectangleException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/polygon/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/polygon/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/polygon/Coordinate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/polygon/Coordinate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/TheMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/TheMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +119,9 @@
       <workItem from="1675205994118" duration="5566000" />
       <workItem from="1675361165359" duration="5535000" />
       <workItem from="1675424667574" duration="1690000" />
-      <workItem from="1675445288607" duration="4868000" />
+      <workItem from="1675445288607" duration="10772000" />
+      <workItem from="1675532622093" duration="7459000" />
+      <workItem from="1675609991166" duration="682000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;First realisation&quot;">
       <created>1674995864099</created>
@@ -181,5 +184,13 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="this.index.containsKey(value)" language="JAVA" />
+        <watch expression="value" language="JAVA" />
+        <watch expression="index" language="JAVA" />
+        <watch expression="this.index.get(value)" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
