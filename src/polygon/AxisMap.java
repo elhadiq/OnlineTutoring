@@ -26,16 +26,20 @@ public final class AxisMap <S extends Comparable> {
         }
         return new AxisMap(index);
     }
-    public Integer flatIndexOf(S value){
-        if (this.index==null){
-            return null;
-        }
-        if (!this.index.containsKey(value)){
+    Integer flatIndexOf(S value){
+
+        if (value==null||this.index==null||!this.index.containsKey(value)){
             return null;
         }
         return this.index.get(value);
     }
 
+   public Optional<Integer> indexOf(S value){
+            return Optional.ofNullable(this.flatIndexOf(value));
+    }
+    public int size(){
+        return this.index.size();
+    }
     @Override
     public String toString() {
         return "AxisMap{" +

@@ -15,7 +15,7 @@ public class TheMain {
 
     public static void main(String[] args) {
         //axisMapTest();
-        testflatIndexOf();
+       testflatIndexOf();
 
     }
     public static void axisMapTest(){
@@ -29,7 +29,7 @@ public class TheMain {
         System.out.println(coordinates);
         AxisMap axis=AxisMap.from(coordinates);
         System.out.println(axis);
-        System.out.println(axis.flatIndexOf(11));
+
     }
     public static void testflatIndexOf(){
         /**
@@ -42,7 +42,17 @@ public class TheMain {
         coordinates.add(x);
         AxisMap axis=AxisMap.from(coordinates);
         System.out.println(axis);
-        System.out.println(axis.flatIndexOf(new Coordinate(11)));
-        System.out.println(axis.flatIndexOf(11));
+        System.out.println(axis.indexOf(new Coordinate(11)));
+        System.out.println(axis.indexOf(new Coordinate(100)));
+        System.out.println("The size of the index is "+axis.size());
+
+        System.out.println(axis.indexOf(11));
+        System.out.println(axis.indexOf(9));
+        axis.indexOf(11).ifPresent(System.out::println);
+        axis.indexOf(9).ifPresent(System.out::println);
+        if(axis.indexOf(11).isPresent()){
+            int y=(int) axis.indexOf(11).get();
+            System.out.println("the index of 11 is "+y);
+        }
     }
 }

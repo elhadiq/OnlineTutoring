@@ -4,18 +4,18 @@ package polygon;
 import java.util.Objects;
 
 public class Coordinate <T extends Comparable>implements Comparable{
-   private  T x;
+   private  T val;
 
     public Coordinate(T x) {
-        this.x = x;
+        this.val = x;
     }
 
-    public void setX(T x) {
-        this.x = x;
+    public void setVal(T x) {
+        this.val = x;
     }
 
     public T getX() {
-        return x;
+        return val;
     }
 
     @Override
@@ -26,13 +26,13 @@ public class Coordinate <T extends Comparable>implements Comparable{
 
     @Override
     public int hashCode() {
-        return Objects.hash(x);
+        return Objects.hash(val);
     }
 
     @Override
     public String toString() {
         return "Coordinate{" +
-                "x=" + x +
+                "x=" + val +
                 '}';
     }
 

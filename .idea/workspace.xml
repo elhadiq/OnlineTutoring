@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8796d408-888d-440c-8099-ef7ac57a3f3f" name="Changes" comment="Fix Static methodes and Exceptions">
-      <change afterPath="$PROJECT_DIR$/src/polygon/AxisMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/polygon/PlaneMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/polygon/AxisMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/polygon/AxisMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/polygon/Coordinate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/polygon/Coordinate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/TheMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/TheMain.java" afterDir="false" />
     </list>
@@ -121,7 +121,8 @@
       <workItem from="1675424667574" duration="1690000" />
       <workItem from="1675445288607" duration="10772000" />
       <workItem from="1675532622093" duration="7459000" />
-      <workItem from="1675609991166" duration="682000" />
+      <workItem from="1675609991166" duration="4306000" />
+      <workItem from="1675724508121" duration="846000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;First realisation&quot;">
       <created>1674995864099</created>
@@ -181,6 +182,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.IllegalArgumentException" package="java.lang" />
           <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="2" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
