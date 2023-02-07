@@ -19,7 +19,7 @@ public final class AxisMap <S extends Comparable> {
          * returns a new AxisMap starting from the given coordinates
          */
         Map<S, Integer> index= new HashMap<S, Integer>();
-
+        //We dont allow redundant key, two keys that have the same value will be considered as one
         Collections.sort((List<S>) coordinates);
         for (int i=0;i<coordinates.size();i++){
             index.put(((List<S>) coordinates).get(i),i);
