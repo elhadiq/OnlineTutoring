@@ -38,11 +38,12 @@ public final class Rectangle <T extends Comparable >{
         RectangleException.verifyNonNull(left);
         RectangleException.verifyNonNull(right);
         RectangleException.verifyBounds(left,right);
-        RectangleException.verifyBounds(top,bottom);
+        RectangleException.verifyBounds(bottom,top);
+        /*
         if (bottom.compareTo(top)<0 ||right.compareTo(left)<0){
             throw new IllegalArgumentException("You have a problem bottom="+bottom+ " is greater than top ="+top+" or left="+left +"is greater than right="+right);
         }
-
+        */
         EnumMap<Direction, T> borders=new EnumMap<>(Direction.class);
 
         borders.put(Direction.TOP,top);

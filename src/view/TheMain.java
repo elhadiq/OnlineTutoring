@@ -11,13 +11,14 @@ public class TheMain {
 
     public static void main(String[] args) {
 
-        int i=5;
+        int i=6;
         switch (i) {
             case 1 -> axisMapTest();
             case 2 -> testflatIndexOf();
             case 3 -> testPlanedMap();
             case 4->testPlanMapOf();
-            default -> testIndexPair();
+            case 5-> testIndexPair();
+            default ->testGrid();
         }
 
     }
@@ -92,8 +93,21 @@ public class TheMain {
     public static void testIndexPair(){
         IndexPair indexPair=new IndexPair(1,1);
         print(indexPair);
-        print(indexPair.increment(Direction.TOP));
+        IndexPair nextTop=indexPair.increment(Direction.TOP);
+        print(nextTop);
+        IndexPair nextLeft=indexPair.increment(Direction.LEFT);
         print(indexPair.increment(Direction.LEFT));
+        print(nextLeft);
+        print("is Left befor me :"+(indexPair.compareTo(nextLeft)<0));
+        print("is TOP befor me :"+(indexPair.compareTo(nextTop)<0));
         //make Direction package private
+    }
+    public static void testGrid(){
+        Rectangle<Integer> rect=Rectangle.of(5,1,1,4);
+        Grid grid=Grid.from(rect);
+        print(grid);
+        for (IndexPair indexPair : grid) {
+            print(indexPair);
+        }
     }
 }

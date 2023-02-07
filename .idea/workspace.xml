@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8796d408-888d-440c-8099-ef7ac57a3f3f" name="Changes" comment="Fix Static methodes and Exceptions">
-      <change afterPath="$PROJECT_DIR$/src/polygon/IndexPair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MyIterable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/polygon/Grid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/polygon/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/polygon/Rectangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/TheMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/TheMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Record" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -122,7 +125,7 @@
       <workItem from="1675532622093" duration="7459000" />
       <workItem from="1675609991166" duration="4306000" />
       <workItem from="1675724508121" duration="9012000" />
-      <workItem from="1675782649558" duration="1802000" />
+      <workItem from="1675782649558" duration="5900000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;First realisation&quot;">
       <created>1674995864099</created>
