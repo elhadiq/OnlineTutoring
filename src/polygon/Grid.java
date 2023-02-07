@@ -50,7 +50,7 @@ public final class Grid implements Iterable<IndexPair> {
 
         public MyIterator(Rectangle<Integer> rectangle) {
             this.rectangle = rectangle;
-            this.index = new IndexPair(rectangle.left(),rectangle.bottom());
+            this.index = new IndexPair(-1,-1);
             this.last=new IndexPair(rectangle.right(),rectangle.top());
         }
 
@@ -63,8 +63,12 @@ public final class Grid implements Iterable<IndexPair> {
         @Override
         public IndexPair next() {
             if (this.hasNext()){
-                index= index.yIndex()<rectangle.top()-1?index.increment(Direction.TOP):new IndexPair(index.xIndex()+1, rectangle.bottom());
-        }
+                if (index.compareTo(new IndexPair(-1,-1))==0) {
+                    index=new IndexPair(rectangle.left(),rectangle.bottom());
+                }else {
+                    index= index.yIndex()<rectangle.top()-1?index.increment(Direction.TOP):new IndexPair(index.xIndex()+1, rectangle.bottom());
+                }
+            }
             return index;
         }
 }
