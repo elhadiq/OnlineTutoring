@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8796d408-888d-440c-8099-ef7ac57a3f3f" name="Changes" comment="Fix Static methodes and Exceptions">
-      <change afterPath="$PROJECT_DIR$/src/MyIterable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/polygon/Grid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/polygon/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/polygon/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/polygon/AxisMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/polygon/AxisMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/polygon/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/polygon/Grid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/polygon/IndexPair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/polygon/IndexPair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/polygon/PlaneMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/polygon/PlaneMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/TheMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/TheMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +58,20 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.view.TheMain">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="view.Main" />
+      <module name="Assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="Assignments" />
@@ -97,6 +110,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.view.TheMain" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.TheMain" />
@@ -125,7 +139,7 @@
       <workItem from="1675532622093" duration="7459000" />
       <workItem from="1675609991166" duration="4306000" />
       <workItem from="1675724508121" duration="9012000" />
-      <workItem from="1675782649558" duration="5900000" />
+      <workItem from="1675782649558" duration="11110000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;First realisation&quot;">
       <created>1674995864099</created>

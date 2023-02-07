@@ -40,13 +40,13 @@ public final class PlaneMap {
         }
 
     }
-    public static  PlaneMap from(Set<Rectangle> rectangles){
-        List<Comparable> x= new ArrayList<>();
-        List<Comparable> y=new ArrayList<>();
+    public static <S extends Comparable> PlaneMap from(Set<Rectangle> rectangles){
+        List<S> x= new ArrayList<>();
+        List<S> y=new ArrayList<>();
         for (Rectangle rect:rectangles
              ) {
-            rect.getBorders(Direction.VERTICAL_BOUNDS).values().forEach(val->y.add((Comparable) val));
-            rect.getBorders(Direction.HORIZONTAL_BOUNDS).values().forEach(val->x.add((Comparable) val));
+            rect.getBorders(Direction.VERTICAL_BOUNDS).values().forEach(val->y.add((S) val));
+            rect.getBorders(Direction.HORIZONTAL_BOUNDS).values().forEach(val->x.add((S) val));
         }
         return  PlaneMap.of(x,y);
     }

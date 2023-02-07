@@ -14,10 +14,12 @@ public final class AxisMap <S extends Comparable> {
     }
 
     public static <S extends Comparable>  AxisMap from(Collection<S> coordinates){
+
         /**
          * static AxisMap from(Collection<S> coordinates)
          * returns a new AxisMap starting from the given coordinates
          */
+
         Map<S, Integer> index= new HashMap<S, Integer>();
         //We dont allow redundant key, two keys that have the same value will be considered as one
         Collections.sort((List<S>) coordinates);

@@ -68,5 +68,7 @@ public final class Grid implements Iterable<IndexPair> {
             return index;
         }
 }
+
+
 }
 

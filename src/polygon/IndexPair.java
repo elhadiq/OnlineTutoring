@@ -6,25 +6,25 @@ public record IndexPair(Integer xIndex,Integer yIndex) implements Comparable<Ind
         return this.xIndex()-o.xIndex()!=0?this.xIndex()-o.xIndex():this.yIndex()-o.yIndex();
     }
     public IndexPair increment(Direction direction){
-        int i,j;
+        int x,y;
         switch (direction){
             case TOP -> {
-                i=0;
-                j=1;
+                x=0;
+                y=1;
             }
             case BOTTOM -> {
-                i=0;
-                j=-1;
+                x=0;
+                y=-1;
             }
             case LEFT -> {
-                i=-1;
-                j=0;
+                x=-1;
+                y=0;
             }
             default -> {
-                i=1;
-                j=0;
+                x=1;
+                y=0;
             }
         }
-        return new IndexPair(this.xIndex()+i,this.yIndex()+j);
+        return new IndexPair(this.xIndex()+x,this.yIndex()+y);
     }
 }

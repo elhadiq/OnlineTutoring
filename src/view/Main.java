@@ -4,14 +4,13 @@ import polygon.*;
 
 import java.util.*;
 
-public class TheMain {
+public class Main {
     public static void print(Object message){
         System.out.println(message);
     }
 
     public static void main(String[] args) {
-
-        int i=1;
+        int i=6;
         switch (i) {
             case 1 -> axisMapTest();
             case 2 -> testflatIndexOf();
@@ -109,5 +108,6 @@ public class TheMain {
         for (IndexPair indexPair : grid) {
             print(indexPair);
         }
+
     }
 }
