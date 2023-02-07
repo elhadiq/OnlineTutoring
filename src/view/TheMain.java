@@ -1,9 +1,6 @@
 package view;
 
-import polygon.AxisMap;
-import polygon.Coordinate;
-import polygon.PlaneMap;
-import polygon.Rectangle;
+import polygon.*;
 
 import java.util.*;
 
@@ -13,17 +10,14 @@ public class TheMain {
     }
 
     public static void main(String[] args) {
-        Scanner in=new Scanner(System.in);
 
-        int i=0;
-        System.out.print("Give a number: ");
-        //i=in.nextInt();
-        i=4;
+        int i=5;
         switch (i) {
             case 1 -> axisMapTest();
             case 2 -> testflatIndexOf();
             case 3 -> testPlanedMap();
-            default -> testPlanMapOf();
+            case 4->testPlanMapOf();
+            default -> testIndexPair();
         }
 
     }
@@ -94,5 +88,12 @@ public class TheMain {
         print(rectangles);
         PlaneMap plan2=PlaneMap.from(rectangles);
         print(plan2);
+    }
+    public static void testIndexPair(){
+        IndexPair indexPair=new IndexPair(1,1);
+        print(indexPair);
+        print(indexPair.increment(Direction.TOP));
+        print(indexPair.increment(Direction.LEFT));
+        //make Direction package private
     }
 }

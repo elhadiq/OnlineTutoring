@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-enum Direction{
+public enum Direction{
     TOP(true,false),
     BOTTOM(true,true),
     LEFT(false,false),
