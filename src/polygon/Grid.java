@@ -51,7 +51,7 @@ public final class Grid implements Iterable<IndexPair> {
         public MyIterator(Rectangle<Integer> rectangle) {
             this.rectangle = rectangle;
             this.index = new IndexPair(-1,-1);
-            this.last=new IndexPair(rectangle.right(),rectangle.top());
+            this.last=new IndexPair(rectangle.right()-1,rectangle.top()-1);
         }
 
 
